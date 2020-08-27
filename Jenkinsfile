@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -f dockerfile . -t yaraamrallah/jenkins_node:v1.0'
                 sh 'docker build -f dockerfile . -t yaraamrallah/jenkins_node_dev:v1.0'
             }
         }
