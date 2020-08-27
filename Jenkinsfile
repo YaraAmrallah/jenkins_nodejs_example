@@ -12,3 +12,5 @@ pipeline {
                 sh 'docker login --username $USERNAME --password $PASSWORD'
                 sh 'docker push yaraamrallah/jenkins_node:v1.0'
             }
+            }
+        }
